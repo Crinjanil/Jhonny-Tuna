@@ -1,0 +1,170 @@
+@media (max-width: 1500px) {
+	.container {
+		width: 1120px;
+	}
+	.header-logo p {
+		font-size: 2rem;
+	}
+	.bottom-header {
+		nav {
+			ul {
+				li {
+					font-size: 0.75rem;
+					padding: 8px 12px 8px 7px;
+				}
+			}
+		}
+	}
+	.slider {
+		height: 330px;
+		.circle {
+			@include size(10px, 10px);
+		}
+		.circle-blue {
+			@include size(10px, 10px);
+		}
+	}
+	.cards {
+		height: 200px;
+		margin-top: 0rem;
+		.card {
+			@include size(150px, 180px);
+			img {
+				@include size(135px, 170px);
+			}
+		}
+	}
+	.menu {
+		height: 2000px;
+	}
+	.pop-up {
+		left: 515px;
+	}
+	.search {
+		width: 872px;
+	}
+	footer {
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 1200px) {
+	.container {
+		width: 750px;
+	}
+	header {
+		height: 5vh;
+		border: none;
+		margin-top: 0;
+		.top-header {
+			position: fixed;
+		}
+	}
+	.btnUP {
+		display: none;
+	}
+	.header-logo {
+		p {
+			font-size: 2rem;
+			border: none;
+		}
+		ul {
+			display: none;
+		}
+		.lupa {
+			display: none;
+		}
+		.location {
+			display: none;
+		}
+	}
+	.top-header {
+		.burger {
+			display: block;
+			margin-right: 1rem;
+		}
+	}
+
+	.header-phone {
+		display: none;
+	}
+	.bottom-header {
+		display: none;
+		nav {
+			ul {
+				li {
+					font-size: 0.75rem;
+					padding: 8px 12px 8px 7px;
+				}
+			}
+		}
+	}
+	.slider {
+		height: 200px;
+		img {
+			@include size(500px, 170px);
+		}
+		.circle {
+			display: none;
+		}
+		.circle-blue {
+			display: none;
+		}
+	}
+
+	.cards {
+		height: 340px;
+		margin-top: 0;
+		.card {
+			@include size(120px, 134px);
+			img {
+				@include size(105px, 125px);
+			}
+		}
+	}
+
+	.menu {
+		height: 2400px;
+		margin-top: 0rem;
+		p {
+			font-size: 1.75rem;
+		}
+		ul {
+			li {
+				font-size: 0.9rem;
+			}
+		}
+	}
+	.menu.pizza {
+		margin-top: 4rem;
+	}
+	.footer-menu {
+		.navigation {
+			p {
+				font-size: 0.75rem;
+				margin: 1rem 0;
+			}
+			.navigation-first {
+				margin-right: 2rem;
+			}
+		}
+		.contacts {
+			p {
+				font-size: 0.75rem;
+			}
+			h4 {
+				font-size: 1rem;
+			}
+		}
+		.downloads {
+			h2 {
+				font-size: 1.25rem;
+			}
+			p {
+				margin: 0.5rem 0;
+				font-size: 0.85rem;
+				color: #999999;
+			}
+		}
+	}
+}

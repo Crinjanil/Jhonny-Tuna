@@ -1,0 +1,65 @@
+.burger {
+	display: none;
+	cursor: pointer;
+	&.open {
+		display: none;
+	}
+}
+
+.x {
+	margin-right: 1rem;
+	display: none;
+	cursor: pointer;
+	&.open {
+		display: block;
+	}
+}
+
+.mobile-menu {
+	display: none;
+	width: 750px;
+	margin: auto;
+	position: fixed;
+	top: 35px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: white;
+	z-index: 999;
+	padding: 1.375rem 0;
+	&.open {
+		display: block;
+	}
+	.mobile-navigation {
+		@include flex(start);
+		border-top: $BaseBorder;
+		border-bottom: $BaseBorder;
+		@include size(inherit, 56px);
+		p {
+			margin-left: 0.5rem;
+			font-size: 1.125rem;
+			color: #242424;
+			span {
+				font-size: 0.75rem;
+				color: #999999;
+			}
+		}
+	}
+	.mobile-bottom-img {
+		@include flex(center);
+		margin-top: 3rem;
+	}
+	ul {
+		padding: 1rem 1.75rem;
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		row-gap: 0.75rem;
+		height: 200px;
+		a {
+			text-decoration: none;
+			font-size: 0.75rem;
+			color: #242424;
+		}
+	}
+}

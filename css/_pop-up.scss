@@ -1,0 +1,90 @@
+.pop-up {
+	@include size(506px, 436px);
+	position: absolute;
+	opacity: 1;
+	top: 95px;
+	left: 880px;
+	background: #ffffff;
+	border-radius: 12px;
+	padding: 1rem;
+	box-shadow: 0px 4px 33px 0px #054c6a26;
+	display: none;
+	&.active {
+		display: block;
+	}
+	.pop-items {
+		width: 450px;
+		height: 348px;
+		border-bottom: $BaseBorder;
+		margin-bottom: 0.875rem;
+		.pop-item {
+			width: 450px;
+			height: 70px;
+			display: flex;
+			flex-wrap: wrap;
+			font-size: 1.125rem;
+			justify-content: space-between;
+			margin-bottom: 1rem;
+			.item {
+				display: flex;
+				align-items: center;
+				height: inherit;
+				span {
+					color: #999999;
+					padding: 0.875rem;
+				}
+				p {
+					font-size: 1.125rem;
+				}
+				.item-img {
+					border-radius: 12px;
+				}
+			}
+		}
+		.cost {
+			display: flex;
+			justify-content: end;
+			align-items: center;
+			gap: 0.875rem;
+			img {
+				cursor: pointer;
+			}
+		}
+	}
+	.pop-bottom {
+		@include size(450px, 40px);
+		@include flex(space-between);
+		.tired {
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+			h2 {
+				font-size: 0.875rem;
+				color: #35ade1;
+				width: 140px;
+				height: inherit;
+				border: 1px solid #35ade1;
+				border-radius: 100px;
+				padding: 13px 16px;
+				text-align: center;
+				cursor: pointer;
+			}
+			p {
+				font-size: 1rem;
+			}
+		}
+	}
+	.scroll-line {
+		@include size(8px, 393px);
+		position: relative;
+		background: #d9d9d9;
+		border-radius: 12px;
+		left: 468px;
+		bottom: 400px;
+	}
+	.blue-line {
+		height: 340px;
+		border-radius: 12px;
+		background: #35ade1;
+	}
+}

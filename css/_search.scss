@@ -1,0 +1,36 @@
+.search {
+	@include size(1232px, 44px);
+	align-items: center;
+	border: 1px solid #00000026;
+	border-radius: 100px;
+	display: none;
+	background: white;
+	&.active {
+		display: flex;
+	}
+	input {
+		border: none;
+	}
+	.search-field {
+		@include size(1150px, 36px);
+		margin: 0.75rem;
+		padding: 0.5rem;
+		border-radius: 100px;
+	}
+	.search-submit {
+		@include size(110px, 36px);
+		border-radius: 100px;
+		background: #ff7255;
+		padding: 0.5rem 1rem;
+		font-size: 0.875rem;
+		text-align: center;
+		color: white;
+		margin-right: 0.25rem;
+		cursor: pointer;
+		transition: 0.3s;
+		&:hover {
+			background: #c95841;
+			transition: 0.3s;
+		}
+	}
+}
